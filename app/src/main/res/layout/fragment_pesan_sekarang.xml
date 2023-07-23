@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.PesanSekarangFragment"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu Pemesanan"
+        android:layout_gravity="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:paddingBottom="30dp"/>
+
+    <TextView
+        android:id="@+id/text_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pilih metode pengiriman"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <RadioButton
+            android:id="@+id/radio_item_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reguler (10000)" />
+
+        <RadioButton
+            android:id="@+id/radio_item_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hemat (6000)" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pilih metode pembayaran"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <RadioButton
+            android:id="@+id/radio_itemm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COD" />
+
+
+    </RadioGroup>
+    <TextView
+        android:id="@+id/texttotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Harga"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="16dp"/>
+    <EditText
+        android:id="@+id/editTextBayar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Total Pembayaran" />
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonbg"
+        android:text="Buat Pesanan"
+        style="@style/BtnLogin"
+        android:layout_gravity="center_vertical|center_horizontal"/>
+
+</LinearLayout>

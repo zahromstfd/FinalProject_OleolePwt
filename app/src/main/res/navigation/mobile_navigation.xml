@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/splashScreen">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.projectole.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_keranjangFragment"
+            />
+        <action
+            android:id="@+id/action_homeFragment_to_minumanFragment"
+            app:destination="@id/minumanFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_produkFragment"
+            app:destination="@id/produkFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_notifikasiFragment"
+            app:destination="@id/notifikasiFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_introFragment"
+            app:destination="@id/introFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="com.example.projectole.fragments.SplashScreen"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreen_to_introFragment"
+            app:destination="@id/introFragment" />
+        <action
+            android:id="@+id/action_splashScreen_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/introFragment"
+        android:name="com.example.projectole.fragments.IntroFragment"
+        android:label="fragment_intro"
+        tools:layout="@layout/fragment_intro" >
+        <action
+            android:id="@+id/action_introFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_introFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_introFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.projectole.fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/minumanFragment"
+        android:name="com.example.projectole.fragments.MinumanFragment"
+        android:label="fragment_minuman"
+        tools:layout="@layout/fragment_minuman" >
+        <action
+            android:id="@+id/action_minumanFragment_to_detailMinumanFragment"
+            app:destination="@id/detailMinumanFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notifikasiFragment"
+        android:name="com.example.projectole.fragments.HistoryFragment"
+        android:label="fragment_notifikasi"
+        tools:layout="@layout/fragment_notifikasi" >
+        <action
+            android:id="@+id/action_notifikasiFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_notifikasiFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/produkFragment"
+        android:name="com.example.projectole.fragments.ProdukFragment"
+        android:label="fragment_produk"
+        tools:layout="@layout/fragment_produk" >
+        <action
+            android:id="@+id/action_produkFragment_to_detailMakananFragment"
+            app:destination="@id/detailMakananFragment" />
+        <action
+            android:id="@+id/action_produkFragment_to_detailMinumanFragment"
+            app:destination="@id/detailMinumanFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.projectole.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.projectole.fragments.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailMakananFragment"
+        android:name="com.example.projectole.fragments.DetailMakananFragment"
+        android:label="fragment_detail_makanan"
+        tools:layout="@layout/fragment_detail_makanan" >
+        <action
+            android:id="@+id/action_detailMakananFragment_to_pesanSekarangFragment"
+            app:destination="@id/pesanSekarangFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailMinumanFragment"
+        android:name="com.example.projectole.fragments.DetailMinumanFragment"
+        android:label="fragment_detail_minuman"
+        tools:layout="@layout/fragment_detail_minuman" >
+        <action
+            android:id="@+id/action_detailMinumanFragment_to_pesanSekarangFragment"
+            app:destination="@id/pesanSekarangFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pembayaranFragment"
+        android:name="com.example.projectole.fragments.PembayaranFragment"
+        android:label="fragment_pembayaran"
+        tools:layout="@layout/fragment_pembayaran" >
+        <action
+            android:id="@+id/action_pembayaranFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_pembayaranFragment_to_notifikasiFragment"
+            app:destination="@id/notifikasiFragment" />
+        <action
+            android:id="@+id/action_pembayaranFragment_to_homeFragment2"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pesanSekarangFragment"
+        android:name="com.example.projectole.fragments.PesanSekarangFragment"
+        android:label="fragment_pesan_sekarang"
+        tools:layout="@layout/fragment_pesan_sekarang" >
+        <action
+            android:id="@+id/action_pesanSekarangFragment_to_pembayaranFragment"
+            app:destination="@id/pembayaranFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "589728997505",
+    "project_id": "fir-authole",
+    "storage_bucket": "fir-authole.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:589728997505:android:4cd9513839f09db94fad80",
+        "android_client_info": {
+          "package_name": "com.example.projectole"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "589728997505-seg1fr70mq2l8bmlp0j34s2r0uh2o7jp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHGsecrP8shSvEp3NkPNcHRLcfPRcbAzA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "589728997505-seg1fr70mq2l8bmlp0j34s2r0uh2o7jp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

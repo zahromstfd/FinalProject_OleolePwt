@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorControlNormal">#fff</item>
+        <item name="colorControlActivated">#fff</item>
+        <item name="colorControlHighlight">#f6bf86</item>
+    </style>
+
+    <!-- kode style unutk splash screen -->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="EditTextLogin">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">250dp</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="BtnLogin">
+        <item name="android:layout_width">220dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="backgroundTint">@color/btnpress</item>
+    </style>
+    <style name="BtnMasuk">
+        <item name="android:layout_width">220dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/btnpress</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="backgroundTint">@color/abu</item>
+    </style>
+    <style name="BtnPesanan">
+        <item name="android:layout_width">220dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/btnpress</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="backgroundTint">@color/grey</item>
+    </style>
+
+
+</resources>
